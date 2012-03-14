@@ -1,7 +1,8 @@
 Practice::Application.routes.draw do
-  get "main_pages/home"
 
-  get "main_pages/help"
+  root to: 'main_pages#home'
+
+  get '/help', to: 'main_pages#help'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
